@@ -12,9 +12,6 @@ html, body {
   color: #212529;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit !important;
-}
 // 본문 텍스트
 p, li, span, div {
   font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
@@ -42,6 +39,7 @@ p, li, span, div {
 .layout-left .content .quote {
   background: #fbfbfb !important;
   border: none !important;
+  border-left: 3px solid #d0ddce !important; // 왼쪽 포인트 컬러 강조
   padding: 15px 20px !important;
   margin: 0 0 30px 0 !important;
   font-style: italic !important;
@@ -220,12 +218,14 @@ p, li, span, div {
 
 mark {
   display: inline-block;
-  background: #fffbea;
-  color: #92400e;
+  background: #f8f9f5;
+  color: #3a4a3f;
   padding: 0.4rem 1rem;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  border-radius: 8px;
-  border: 1px solid #fde68a;
-  margin: 0.3rem 0.5rem 0.3rem 0;
+  border-radius: 10px;
+  border: 1px solid #d0ddce;
+  box-shadow: inset 0 0 0 1px rgba(180, 198, 180, 0.1), 0 2px 4px rgba(0,0,0,0.03);
+  margin: 0.3rem 0.5rem;
+  transition: all 0.2s ease;
 }
