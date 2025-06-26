@@ -1,0 +1,231 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+
+@import 'modern-resume-theme';
+
+html, body {
+  font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 10px;  /* 1.6rem = 16px 가 되도록 */
+  line-height: 1.6 !important;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+}
+// 본문 텍스트
+p, li, span, div {
+  font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+
+
+
+// 왼쪽 details를 상단에 고정
+.layout-left .details {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  position: sticky !important;
+  top: 20px !important;
+}
+
+// 오른쪽 content 영역 스타일링
+.layout-left .content {
+  padding-left: 30px !important;
+}
+
+// 인용구 스타일 (포인트 컬러 추가)
+.layout-left .content .quote {
+  background: #fbfbfb !important;
+  border: none !important;
+  padding: 15px 20px !important;
+  margin: 0 0 30px 0 !important;
+  font-style: italic !important;
+  font-size: 14px !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+// 프로젝트별 구분 (미니멀하게)
+.layout-left .content p strong {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  display: block !important;
+  margin: 15px 0 15px 0 !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e9ecef !important;
+  padding-bottom: 8px !important;
+}
+
+// 첫 번째 프로젝트는 위쪽 여백 없애기
+.layout-left .content p:first-of-type strong {
+  margin-top: 10px !important;
+}
+
+// 리스트 스타일링 (기본 스타일 유지)
+.layout-left .content ul {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 0 0 20px !important;
+  margin-bottom: 50px !important;
+  box-shadow: none !important;
+}
+
+.layout-left .content ul li {
+  margin-bottom: 5px !important;
+  position: relative !important;
+  padding-left: 0 !important;
+  font-size: 1.6rem !important;
+}
+
+// 기간 정보 스타일링 (괄호 안의 기간)
+.layout-left .content p strong:contains("(") {
+  background: #28a745 !important;
+  font-size: 1.6rem !important;
+  padding: 8px 15px !important;
+  margin: 20px 0 15px 0 !important;
+}
+
+// 전체 row 상단 정렬
+.layout-left.row {
+  align-items: flex-start !important;
+}
+
+// Skills 테이블 개선
+.skills-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.8rem;
+  font-size: 1.6rem;
+
+  tr {
+    background: none;
+    border: none;
+  }
+
+  td {
+    padding: 0.5rem 1rem;
+    vertical-align: top;
+    border: none;
+
+    &:first-child {
+      font-weight: 600;
+      width: 130px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      padding-left: 1.8rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.3rem;
+        left: 0;
+        width: 3px;
+        height: 80%;
+        background-color: #333;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+.cert-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.6rem !important;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.cert-table th {
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  font-weight: 700 !important;
+  color: #343a40 !important;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fbfbfb;
+}
+
+.cert-table td {
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  color: #495057 !important;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+.education-line {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #212529;
+  font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  strong {
+    font-weight: 700;
+    color: #111;
+    margin-right: 0.5rem;
+  }
+
+  .degree {
+    color: #555;
+    margin-left: 0.25rem;
+  }
+
+  .period {
+    color: #999;
+    font-size: 1.4rem;
+    margin-left: 0.75rem;
+  }
+}
+
+// Skills / Certificates / Education 간 간격 명확히
+.text-container + .text-container {
+  margin-top: 60px;
+}
+
+.list-container + .text-container {
+  margin-top: 40px;
+}
+.intro-container p:last-of-type {
+  margin-top: 4rem; // 기술 스택 부분 위에 여백
+}
+
+// mark {
+//   display: inline-block;
+//   background: transparent;
+//   color: #111827;
+//   padding: 0.4rem 1.2rem;
+//   font-size: 1.4rem;
+//   font-weight: 600;
+//   border: 1px solid #cbd5e1;
+//   border-radius: 8px;
+//   margin: 0.3rem 0.5rem 0.3rem 0;
+//   transition: background 0.2s ease;
+// }
+
+mark {
+  display: inline-block;
+  background: #fffbea;
+  color: #92400e;
+  padding: 0.4rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+}

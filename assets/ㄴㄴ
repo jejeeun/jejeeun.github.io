@@ -1,0 +1,118 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+@import 'modern-resume-theme';
+
+// 커스텀 폰트 설정
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400;
+}
+
+// 이름 (메인 제목) 강조
+.header-title {
+  font-weight: 700 !important;
+}
+
+// 직책 제목
+.header-subtitle {
+  font-weight: 400 !important;
+}
+
+// 본문 텍스트
+p, li, span, div {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+// 섹션 간 간격 추가
+.container {
+  margin-bottom: 50px !important;
+}
+
+.intro-container {
+  margin-bottom: 60px !important;
+}
+
+// 왼쪽 details를 상단에 고정
+.layout-left .details {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  position: sticky !important;
+  top: 20px !important;
+}
+
+// 오른쪽 content 영역 스타일링
+.layout-left .content {
+  padding-left: 30px !important;
+}
+
+// 인용구 스타일 (포인트 컬러 추가)
+.layout-left .content .quote {
+  background: #fbfbfb !important;
+  border: none !important;
+  // border-left: 3px solid #06b6d4 !important;
+  padding: 15px 20px !important;
+  margin: 0 0 30px 0 !important;
+  font-style: italic !important;
+  color: #64748b !important;
+  font-size: 14px !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+// 프로젝트별 구분 (미니멀하게)
+.layout-left .content p strong {
+  background: none !important;
+  color: #2c3e50 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  display: block !important;
+  margin: 35px 0 15px 0 !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e9ecef !important;
+  padding-bottom: 8px !important;
+}
+
+// 첫 번째 프로젝트는 위쪽 여백 없애기
+.layout-left .content p:first-of-type strong {
+  margin-top: 10px !important;
+}
+
+// 리스트 스타일링 (기본 스타일 유지)
+.layout-left .content ul {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 0 0 20px !important;
+  margin-bottom: 30px !important;
+  box-shadow: none !important;
+}
+
+.layout-left .content ul li {
+  margin-bottom: 10px !important;
+  line-height: 1.6 !important;
+  color: #2c3e50 !important;
+  position: relative !important;
+  padding-left: 0 !important;
+  font-size: 16px !important;
+  list-style-type: disc !important;
+}
+
+// 기간 정보 스타일링 (괄호 안의 기간)
+.layout-left .content p strong:contains("(") {
+  background: #28a745 !important;
+  font-size: 16px !important;
+  padding: 8px 15px !important;
+  margin: 20px 0 15px 0 !important;
+}
+
+// 전체 row 상단 정렬
+.layout-left.row {
+  align-items: flex-start !important;
+}
