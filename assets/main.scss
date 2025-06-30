@@ -75,7 +75,49 @@ p, li, span, div {
   margin-bottom: 30px !important;
   box-shadow: none !important;
 }
+// 기존 리스트 스타일링 (기본 스타일 유지)
+.layout-left .content ul {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 0 0 20px !important;
+  margin-bottom: 30px !important;
+  box-shadow: none !important;
+}
 
+// 1depth 리스트 아이템
+.layout-left .content ul li {
+  margin-bottom: 8px !important;
+  position: relative !important;
+  padding-left: 0 !important;
+  font-size: 1.6rem !important;
+  line-height: 1.5 !important;
+}
+
+// 2depth 중첩 리스트 전체
+.layout-left .content ul li ul {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  padding-left: 18px !important;
+}
+
+// 2depth 리스트 아이템
+.layout-left .content ul li ul li {
+  margin-top: 6px !important;
+  font-size: 1.6rem !important;
+  line-height: 1.5 !important;
+  list-style: none !important;
+  position: relative !important;
+}
+
+// 2depth 아이템에 ㄴ 문자 추가
+.layout-left .content ul li ul li::before {
+  content: "ㄴ";
+  position: absolute;
+  left: -15px;
+  color: #666;
+  font-weight: 600;
+}
 // .layout-left .content ul li {
 //   margin-bottom: 5px !important;
 //   position: relative !important;
