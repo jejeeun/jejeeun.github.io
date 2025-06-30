@@ -115,11 +115,7 @@ content:
       <table class="skills-table">
         <tr>
           <td>Backend</td>
-          <td>Java 21, Spring Framework 6.x, Spring Boot 3.2, Swagger</td>
-        </tr>
-        <tr>
-          <td>Database</td>
-          <td>MariaDB 11, MySQL 8.0, PostgreSQL 15, Redis 7.x, Hazelcast 5.x</td>
+          <td>Java 21, Spring Framework 6.x, Spring Boot 3.2, Swagger, MariaDB 11, MySQL 8.0, PostgreSQL 15, Redis 7.x, Hazelcast 5.x</td>
         </tr>
         <tr>
           <td>Frontend</td>
