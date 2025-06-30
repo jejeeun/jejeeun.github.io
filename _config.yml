@@ -48,20 +48,17 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  4년 차 개발자로 증권 IT 기업에서 프로젝트의 설계, 기획, 개발, 배포, 운영까지 전 과정을 경험했습니다. 
-  주로 백엔드 개발을 담당했지만, 서비스의 전체적인 흐름과 구조를 보는 데 관심이 많아 프론트엔드와 인프라 영역까지도 책임감 있게 관리해 왔습니다. 
+  일의 시작은 항상 흐름을 이해하는 것부터라고 생각하는, 4년 차 웹 개발자입니다.
 
+  <mark>Java</mark>와 <mark>Spring Framework</mark>를 주력으로 사용하며, 증권 OpenAPI 프로젝트의 초기멤버로 수주까지 경험했습니다.
 
-  초기 기획 단계부터 프로젝트 수주까지 경험하며, 실현 가능한 기획을 기술로 구현하는 실행력을 길러왔습니다.
-  문제 해결에 있어 단기적인 수정보다는 시스템 전반을 이해하고 구조적 개선에 집중해 왔으며, 이러한 접근이 장기적으로 더 안정적이고 확장 가능한 시스템 구축에 기여한다고 믿습니다.
+  백엔드를 중심으로하되, 프론트와 인프라까지 자연스럽게 넘나들며 서비스에 필요한 모든 부분을 함께 다뤄왔습니다.
 
-  다양한 영역을 넘나들며 쌓은 경험을 바탕으로, 팀 안에서는 서로 다른 영역 간 연결을 돕고 흐름을 정리하는 브릿지 역할을 맡아왔습니다.
-
-  주요 기술 스택: <mark>Java</mark>, <mark>Spring Framework</mark>, <mark>Mysql</mark>, <mark>Mybatis</mark>, <mark>Redis</mark>, <mark>Vue.js</mark>, <mark>JavaScript</mark>, <mark>CI/CD</mark>
+  ‘왜 이렇게 동작해야 하는가’를 끊임없이 질문하며, 팀에 더 나은 방향을 제안하고 함께 성장하는 과정을 즐깁니다.
 
 
 content:
-  - title: Experience # Title for the section
+  - title: Work Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
@@ -70,8 +67,6 @@ content:
         # link_text: boringcompany.com
         sub_title: Software Engineer
         caption: 2024.01 - 현재
-        quote: >
-          증권 IT 전문 기업에서 OpenAPI 시스템 개발 및 운영 증권 IT 전문 기업에서 OpenAPI 시스템 개발 및 운영 증권 IT 전문 기업에서 OpenAPI 시스템 개발 및 운영 증권 IT 전문 기업에서 OpenAPI 시스템 개발 및 운영
         description: |
           **웹 기반 증권 OpenAPI 시스템**
           - Web 기반 OpenAPI 시스템 초기부터 참여하여 **기획부터 개발, 배포, 운영**까지 전 과정 주도로 대형 증권사 사업 수주 기여
@@ -87,8 +82,6 @@ content:
         title: Ejsoft
         sub_title: Software Engineer
         caption: 2021.06 - 2023.12
-        quote: >
-          자동차 운행 제한 시스템 개발 및 실시간 차량 이미지 검출 솔루션 구축 자동차 운행 제한 시스템 개발 및 실시간 차량 이미지 검출 솔루션 구축 자동차 운행 제한 시스템 개발 및 실시간 차량 이미지 검출 솔루션 구축 자동차 운행 제한 시스템 개발 및 실시간 차량 이미지 검출 솔루션 구축
         description: |
           **자동차 운행 제한 시스템**
           - 자동차 배출가스 등급 기반의 운행제한 단속·관리를 위한 국내 점유율 1위 솔루션 개발
@@ -107,8 +100,6 @@ content:
         title: Itez (External Project)
         sub_title: Backend Engineer (Freelance)
         caption: 2025.01 - 2025.05
-        quote: >
-          아파트 단지 주민 대상 지역 멤버십 플랫폼 아키텍처 전환
         description: |
           **코아페 - 아파트 단지 주민 대상 지역 멤버십 플랫폼**
           - 기존 Firebase/Firestore 기반 서버리스 아키텍처의 높은 운영비용과 확장성 한계 해결
