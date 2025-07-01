@@ -48,14 +48,9 @@ darkmode: never
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  일의 시작은 항상 흐름과 큰 그림을 이해하는 것부터라고 생각하는, 4년차 웹 개발자입니다.
-
-  담당 분야를 나누지 않고 문제의 실제 원인을 찾는 방식으로 일해왔기 때문에, 백엔드 개발을 중심으로 하면서도 프론트엔드와 인프라까지 다룰 수 있게 되었습니다. 
-  <mark>Java</mark>와 <mark>Spring Framework</mark>를 주로 사용하며, 증권 OpenAPI 프로젝트에 초기 멤버로 참여해서 수주까지 경험했습니다.
-
-  반복적인 작업이나 불편한 프로세스를 보면 자동화할 수 있는 방법이 없을까 고민하게 됩니다. '현재 방식이 왜 그렇게 설계되었는가'를 먼저 파악한 후, 사용자 경험 개선이나 프로세스 자동화 같은 실질적인 개선 방안을 팀에 제안하는 일을 좋아합니다.
-
-  제가 개발한 서비스가 사회와 기업에 가치를 창출하여 더 많은 사람들에게 실질적인 이익으로 이어지는 꿈을 항상 품고 있습니다.
+  일의 시작은 항상 흐름과 큰 그림을 이해하는 것부터라고 생각하는, 4년차 웹 개발자입니다.<br><br>
+  담당 분야를 나누지 않고 문제의 실제 원인을 찾는 방식으로 일해왔기 때문에, 백엔드 개발을 중심으로 하면서도 프론트엔드와 인프라까지 다룰 수 있게 되었습니다. <mark>Java</mark>와 <mark>Spring Framework</mark>를 주로 사용하며, 증권 OpenAPI 프로젝트에 초기 멤버로 참여해서 수주까지 경험했습니다.<br><br>
+  반복적인 작업이나 불편한 프로세스를 보면 자동화할 수 있는 방법이 없을까 고민하게 됩니다. '현재 방식이 왜 그렇게 설계되었는가'를 먼저 파악한 후, 사용자 경험 개선이나 프로세스 자동화 같은 실질적인 개선 방안을 팀에 제안하는 일을 좋아합니다. <br><br>제가 개발한 서비스가 사회와 기업에 가치를 창출하여 더 많은 사람들에게 실질적인 이익으로 이어지는 꿈을 항상 품고 있습니다.
 content:
   - title: Work Experience # Title for the section
     layout: list # Type of content section (list/text)
