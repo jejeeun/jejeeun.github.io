@@ -53,7 +53,7 @@ about_content: | # this will include new lines to allow paragraphs
   문제 발생 시 담당 영역을 구분하지 않고 근본 원인까지 추적하는 습관으로 백엔드를 중심으로 프론트엔드와 인프라까지 아우르는 풀스택 개발을 해왔습니다.
   <mark>Java</mark>와 <mark>Spring Framework</mark>를 주력으로 사용하며, 증권 OpenAPI 프로젝트의 초기멤버로 수주까지 경험했습니다.
 
-  배포 자동화, 개발환경 구축, 사용자 UX 개선 등 서비스 전반에 관심을 가지며 '왜 이렇게 동작해야 하는가'를 끊임없이 질문하고, 팀에 더 나은 방향을 제안하며 함께 성장하는 과정을 즐깁니다.
+  배포 자동화, 사용자 UX 개선 등에 관심을 가지며 '왜 이렇게 동작해야 하는가'를 끊임없이 질문하고, 팀에 더 나은 방향을 제안하며 함께 성장하는 과정을 즐깁니다.
   
   제가 개발한 서비스가 사회와 기업에 가치를 창출하여 더 많은 사람들에게 실질적인 이익으로 이어지는 꿈을 항상 품고 있습니다.
 content:
@@ -69,7 +69,7 @@ content:
         quote: >
           증권 IT 전문기업, 웹인프라팀 최초 개설 후 초기 멤버로 합류하여 첫 사업 성과 창출
         description: |
-          **증권 OpenAPI 시스템 (2024.04 – 2025.07)**
+          **증권 OpenAPI 시스템 (2024.04 – 2025.06)**
 
             - Spring Boot 멀티모듈 기반 공통 캐시 라이브러리 구축으로 외부/로컬 캐시 간 YAML 설정만으로 전환 지원
             - Spring WebFlux 게이트웨이 분산 캐시 연동으로 TPS 5,000 처리 시 메시지 무손실률 100% 달성
@@ -108,7 +108,7 @@ content:
           - Electron + Vue.js 기반 데스크톱 애플리케이션으로 MECAR 시스템 연동 및 전체 워크플로우 구현
           - 적발차량 이미지 검수부터 불일치 목록 생성, 고지서 발급까지 end-to-end 자동화 파이프라인 구축
 
-  - title: Other Experience
+  - title: Projects
     layout: list
     content:
       - layout: left
