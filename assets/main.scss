@@ -19,6 +19,42 @@ p, li, span, div {
 
 
 
+.text-container p strong {
+  display: block;
+}
+
+/* 두 번째 이후 <p>에만 상단 여백 추가 */
+.text-container p:not(:first-of-type) {
+  margin-top: 3rem;
+}
+
+.text-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.text-container li {
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.text-container li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4f46e5; /* 인디고 포인트 컬러 */
+  font-weight: bold;
+}
+
+.text-container li > ul {
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+  font-size: 14px;
+  color: #4b5563;
+  padding-left: 1.2rem;
+}
 
 // // 왼쪽 details를 상단에 고정
 // .layout-left .details {
