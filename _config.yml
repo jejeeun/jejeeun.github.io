@@ -123,7 +123,6 @@ content:
           - Firebase Cloud Functions를 Spring Boot REST API로 전환하여 가변 호출 비용을 고정 인프라 비용으로 개선
           - 복잡한 쿼리 요구사항 대응을 위해 NoSQL에서 PostgreSQL로 점진적 데이터 마이그레이션을 통한 아키텍처 전환
           - PostgreSQL JSONB + GIN 인덱스 활용한 텍스트 검색 성능 최적화
-          - 사용자 3개월 활성도 분석 기반 차등 포인트 지급 배치 로직 구현
           - Firebase Realtime Database → WebSocket 기반 실시간 통신으로 전환
 
   - title: Skills
