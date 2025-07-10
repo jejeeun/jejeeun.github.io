@@ -68,7 +68,7 @@ content:
 
             - Spring Boot 멀티모듈 아키텍처에서 Proxy 패턴 기반 캐시 추상화 라이브러리 설계/개발 (YAML 설정 기반 Redis/Hazelcast 전환으로 고객사 요구사항 대응)
             - WebFlux 게이트웨이에 비동기 클러스터 캐시 연동으로 API 처리 성능 최적화 (TPS 5,000 달성)
-            - 파일 I/O 병목 해결을 위한 Hazelcast 분산 로깅 시스템 구축
+            - WAS의 파일 I/O 병목 해결을 위한 Hazelcast 분산 로깅 시스템 구축
             - 증권사 EUC-KR 환경과 Spring UTF-8 간 인코딩 변환 및 바이너리 TR → JSON 포맷 변환 로직 구현
             - OpenTelemetry 분산 트레이싱 도입으로 장애 원인 파악 시간 대폭 단축 (WebFlux 환경 요청 누락 해결)
             - 관리자 백오피스 풀스택 구축 (TR 명세서 엑셀 업로드 자동화로 운영자 작업시간 70% 단축)
