@@ -74,7 +74,7 @@ content:
             - **분산 로깅** ― Hazelcast 분산 캐시 Ringbuffer 기반 로깅 파이프라인으로 WAS 파일 I/O 병목 제거  
             - **모니터링** ― OpenTelemetry 분산 트레이싱 도입으로 멀티모듈 간 요청 흐름을 단일 trace로 시각화
             - **인코딩 전환** ― EUC-KR 바이너리 TR → UTF-8 JSON 변환 컴포넌트 구현  
-            - **UX 개선** ― TR 명세서 Excel 업로드 자동화 백오피스(Vue3 + Quasar) → 운영자 작업 시간 70 %↓  
+            - **UX 개선** ― TR 명세서 Excel 업로드 자동화 백오피스(Vue3 + Quasar) → 운영자 작업 시간 대폭 단축 
             - **테스트베드** ― Vue3 통합 API 테스트베드 구축으로 기존 증권사 테스트베드 오류 해결, 고객 도입 프로세스 안정화  
             - **무중단 배포** ― 폐쇄망에서도 동작하는 Jenkins 파이프라인 구축(포트 스위칭) 
             - **보안 강화** ― NGINX WAF(ModSecurity + OWASP CRS) & CSP nonce 적용 → OWASP ZAP High/Medium 0건 달성
