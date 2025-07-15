@@ -9,14 +9,15 @@ version: 2
 name: 이제은
 title: Software Engineer
 email: dlwpdms1@gmail.com
-website: https://github.com/jejeeun
+website: https://jejeeun.github.io/blog
+blog: https://jejeeun.github.io/blog/
 
 # Dark Mode (true/false/never)
 darkmode: never
 
 # Social links
 # twitter_username: facespics
-# github_username:  sproogen
+github_username:  jejeeun
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -50,7 +51,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   일의 시작은 항상 흐름과 큰 그림을 이해하는 것부터라고 생각하는, 4년차 백엔드 개발자 이제은입니다. <br><br>
   금융·공공 도메인에서 <mark>Java</mark>와 <mark>Spring</mark> 기반 서비스를 개발하면서도 마찬가지로, 단순히 주어진 기능만 구현하는 것이 아니라 "왜 이런 문제가 반복되는가?"를 항상 고민해왔습니다. 증권 OpenAPI 프로젝트에서 각 모듈마다 제각각인 캐시 설정으로 인한 개발 비효율성을 발견했을 때도, 당장의 해결보다는 Redis와 로컬 캐시를 통합 관리하는 공통 라이브러리를 설계해 팀 전체의 근본적인 문제를 해결했습니다.<br><br>
-  4년간의 개발 경험을 통해 좋은 개발자란 주어진 요구사항을 구현하는 사람이 아니라, 문제의 본질을 이해하고 더 나은 방향을 제시할 수 있는 사람이라고 생각하게 되었습니다. 앞으로도 복잡한 문제일수록 기꺼이 파고들어, 팀과 시스템에 실질적인 변화를 만드는 개발자가 되고 싶습니다.
+  4년간 개발하며 배운 것이 있습니다. 좋은 개발자는 요구사항을 구현하는 데 그치지 않고, 문제의 본질을 이해해 더 나은 방향을 제시하는 사람임을 배웠습니다. 그 과정에서 긍정적인 태도가 팀 에너지를 높이고 협업을 원활하게 만든다는 사실도 몸소 느꼈습니다. 저는 이러한 낙관을 바탕으로 복잡한 문제를 끝까지 파헤치고 실행 가능한 해결책을 도출하는 데 자신이 있습니다.
 content:
   - title: Work Experience # Title for the section
     layout: list # Type of content section (list/text)
@@ -66,23 +67,25 @@ content:
         description: |
           **증권 OpenAPI 시스템 (2024.04 – 2025.06)**
 
-            - Spring Boot 멀티모듈 아키텍처에서 Proxy 패턴 기반 캐시 추상화 라이브러리 설계/개발 (YAML 설정 기반 Redis/Hazelcast 전환으로 고객사 요구사항 대응)
-            - WebFlux 게이트웨이에 비동기 클러스터 캐시 연동으로 API 처리 성능 최적화 (TPS 5,000 달성)
-            - WAS의 파일 I/O 병목 해결을 위한 Hazelcast 분산 로깅 시스템 구축
-            - 증권사 EUC-KR 환경과 Spring UTF-8 간 인코딩 변환 및 바이너리 TR → JSON 포맷 변환 로직 구현
-            - OpenTelemetry 분산 트레이싱 도입으로 장애 원인 파악 시간 대폭 단축 (WebFlux 환경 요청 누락 해결)
-            - 관리자 백오피스 풀스택 구축 (TR 명세서 엑셀 업로드 자동화로 운영자 작업시간 70% 단축)
-            - Vue3 기반 통합 API 테스트베드 구축으로 기존 증권사 테스트베드 오작동 문제 해결 (고객 도입 프로세스 안정화)
-            - Jenkins 기반 무중단 배포 자동화 파이프라인 구성 (폐쇄망 환경 CI/CD 구축)
-            - 서버단 보안 강화를 위해 NGINX 기반 WAF 및 리버스 프록시 보안 설정을 구축하고, OWASP ZAP 점검에서 주요 취약점 없이 통과(High/Medium 0건)
+          Spring Boot 멀티모듈 기반 OpenAPI 플랫폼의 캐시 추상화, 게이트웨이 성능 최적화, 분산 로깅, 모니터링, CI/CD, 보안 강화, 그리고 Vue3 프런트엔드까지 전 영역을 담당했습니다. <br><br>
+
+            - **캐시 추상화** ― Spring Boot 멀티모듈에서 Proxy 패턴 라이브러리 설계·개발 → YAML 한 줄로 Redis ↔ Hazelcast 전환  
+            - **성능 최적화** ― WebFlux 게이트웨이를 비동기 클러스터 캐시와 연동, JMeter 부하 테스트로 단일 노드 TPS 5,000 확인  
+            - **분산 로깅** ― Hazelcast 분산 캐시 Ringbuffer 기반 로깅 파이프라인으로 WAS 파일 I/O 병목 제거  
+            - **모니터링** ― OpenTelemetry 분산 트레이싱 도입으로 멀티모듈 간 요청 흐름을 단일 trace로 시각화
+            - **인코딩 전환** ― EUC-KR 바이너리 TR → UTF-8 JSON 변환 컴포넌트 구현  
+            - **UX 개선** ― TR 명세서 Excel 업로드 자동화 백오피스(Vue3 + Quasar) → 운영자 작업 시간 70 %↓  
+            - **테스트베드** ― Vue3 통합 API 테스트베드 구축으로 기존 증권사 테스트베드 오류 해결, 고객 도입 프로세스 안정화  
+            - **무중단 배포** ― 폐쇄망에서도 동작하는 Jenkins 파이프라인 구축(포트 스위칭) 
+            - **보안 강화** ― NGINX WAF(ModSecurity + OWASP CRS) & CSP nonce 적용 → OWASP ZAP High/Medium 0건 달성
             
           **한화 증권 모니터링 시스템 (2024.01 - 2024.06)**
 
-          Asset Chain 입사 후 첫 프로젝트로 대형 증권사의 기존 모니터링 시스템 고도화를 담당하였습니다.<br><br>
+          Asset Chain 입사 후 첫 프로젝트로 대형 증권사의 모니터링 시스템 고도화를 담당하였습니다.<br><br>
 
             - 증권사 핵심 업무 시스템(거래/정산/중계 등) 6개 연동 통합 모니터링을 위한 Prometheus + Grafana 구축
             - 배치 작업 모니터링 한계 해결을 위한 Pushgateway 메트릭 수집 시스템 구축
-            - 장애 대응 지연 개선을 위한 임계값 기반 알람 시스템 구축 (감지 시간 30분 → 3분 단축)
+            - 장애 대응 지연 개선을 위한 임계값 기반 알람 시스템 구축
 
           
 
