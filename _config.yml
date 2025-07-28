@@ -186,6 +186,10 @@ content:
       - JSP, jQuery  
         - 지자체 공공 시스템 유지보수 및 기능 개선 (전자정부 프레임워크 기반)
 
+      **AI/ML**
+      - Python, YOLOv5, OpenCV
+        - 대규모 이미지 데이터셋 구축 및 라벨링
+
   - title: Certificates
     layout: text
     content: |
