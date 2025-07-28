@@ -67,7 +67,7 @@ content:
         description: |
           **증권 OpenAPI 시스템 (2024.04 – 2025.06)**
 
-          Spring Boot 멀티모듈 기반 OpenAPI 플랫폼의 캐시 추상화, 게이트웨이 성능 최적화, 분산 로깅, 모니터링, CI/CD, 보안 강화, 그리고 Vue3 프런트엔드까지 전 영역을 담당했습니다. <br><br>
+          Spring Boot 멀티모듈 기반 OpenAPI 플랫폼의 캐시 추상화, 게이트웨이 성능 최적화, 분산 로깅, 모니터링, CI/CD, 보안 강화, 그리고 Vue3 프론트엔드까지 전 영역을 담당했습니다. <br><br>
 
             - **캐시 추상화** ― 멀티모듈 환경에서 캐시 정책을 통합하고 백엔드 전환을 유연하게 구성
               - Proxy 패턴 기반의 공통 캐시 라이브러리를 설계하고, TTL, 직렬화를 일관되게 구성
@@ -75,9 +75,9 @@ content:
               - YAML 한 줄로 Redis ↔ Hazelcast 전환 가능, 캐시 설정 코드 중복 **100% 제거**
 
             - **성능 최적화** ― 게이트웨이의 대규모 요청 처리 성능을 확보하고 병목 구간을 개선
-              - WebFlux 기반 게이트웨이를 비동기 캐시와 연동하여 처리 경로를 비동기화
-              - JMeter **5대** 환경에서 **1,000 사용자 × 200 루프** 부하 테스트로 성능을 검증
-              - 단일 노드 기준 **TPS 5,000 이상** 달성, 요청 지연 및 **오류율 0%** 유지
+              - WebFlux 기반 게이트웨이에 Reactive 캐시 연동(Hazelcast/Redis) 적용, 전 구간 논블로킹 처리로 병목 제거
+              - JMeter 기반 5대 분산 환경에서 총 **1,000명 동시 사용자** 부하 테스트 수행
+              - 일반 조회 3,500 / 시세 API 2,000 / 원장 조회 300 TPS 달성, **오류율 0%**
 
             - **분산 로깅** ― 실시간 로그 수집 구조를 설계하여 I/O 병목을 제거하고 대응 속도 개선
               - Hazelcast Ringbuffer 기반의 비동기 로그 처리 파이프라인을 구성
@@ -169,6 +169,8 @@ content:
         - OpenAPI 시스템 캐시 및 Pub/Sub 구조 구현, 캐시 백엔드 전환 지원
       - Spring Batch  
         - 정형 파일 파싱 및 Redis/Hazelcast 캐시 적재 배치 구현
+      - Python 3.8 
+        - OpenAPI Python SDK 라이브러리 구현
 
       **DevOps & Infrastructure**
       - Docker, Jenkins, GitLab , Nexus
